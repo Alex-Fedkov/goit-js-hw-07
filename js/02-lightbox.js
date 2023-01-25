@@ -11,11 +11,13 @@ const galleryItemsList = galleryItems.map(({ preview, original, description }) =
 
 galleryEl.insertAdjacentHTML('beforeend', galleryItemsList.join(''));
 
-// console.log(galleryItems);
+// console.log("galleryItemsList", galleryItemsList);
+// console.log("galleryItemsList.join", galleryItemsList.join(''));
+// console.log("galleryItems", galleryItems);
 
 const lightbox = new SimpleLightbox('.gallery a', {
-    captionSelector: "img",
-    captionType: "attr",
+    // captionSelector: "img",
+    // captionType: "attr",
     captionsData: "alt",
     captionDelay: 250,
 });
